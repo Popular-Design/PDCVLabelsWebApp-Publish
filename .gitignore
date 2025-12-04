@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+bower_components/
+vendor/
+
+# Build outputs
+dist/
+build/
+out/
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+
+# Test coverage
+coverage/
+*.coverage
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Package manager locks (optional - depends on strategy)
+# Uncomment if you want to exclude lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
