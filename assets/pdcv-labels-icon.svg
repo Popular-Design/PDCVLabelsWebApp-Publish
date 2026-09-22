@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">PDCV Labels</title>
+  <desc id="desc">A blue and violet application icon showing a stylized label with the letters PDCV.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173B72"/>
+      <stop offset="1" stop-color="#5B2C83"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9E9FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#07162F" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded app tile; the inset keeps the mark legible at small taskbar sizes. -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#background)"/>
+  <circle cx="418" cy="94" r="58" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="91" cy="438" r="94" fill="#59C3FF" opacity="0.08"/>
+
+  <!-- Stylized label/tag. -->
+  <g filter="url(#shadow)">
+    <path d="M104 128c0-18 14-32 32-32h158l114 114v174c0 18-14 32-32 32H136c-18 0-32-14-32-32V128Z" fill="url(#label)"/>
+    <path d="m294 96 114 114H326c-18 0-32-14-32-32V96Z" fill="#B9D6F7"/>
+    <circle cx="157" cy="161" r="16" fill="#5B2C83"/>
+    <path d="M157 151v20M147 161h20" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- PDCV wordmark, designed to remain readable as a small icon. -->
+  <text x="256" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="2" fill="#173B72">PDCV</text>
+  <rect x="157" y="324" width="198" height="10" rx="5" fill="#36A9E1"/>
+  <rect x="191" y="351" width="130" height="8" rx="4" fill="#5B2C83" opacity="0.75"/>
+</svg>
