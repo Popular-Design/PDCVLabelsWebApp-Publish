@@ -1,35 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">PDCV Labels</title>
-  <desc id="desc">A blue and violet application icon showing a stylized label with the letters PDCV.</desc>
+  <title id="title">PD Labels</title>
+  <desc id="desc">A blue and violet application icon showing a cabinet part and a printed label marked PD Labels.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#173B72"/>
       <stop offset="1" stop-color="#5B2C83"/>
     </linearGradient>
-    <linearGradient id="label" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="cabinet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDFEFF"/>
+      <stop offset="1" stop-color="#C9DDF3"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#D9E9FF"/>
+      <stop offset="1" stop-color="#EAF4FF"/>
     </linearGradient>
     <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
       <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#07162F" flood-opacity="0.35"/>
     </filter>
   </defs>
 
-  <!-- Rounded app tile; the inset keeps the mark legible at small taskbar sizes. -->
   <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#background)"/>
-  <circle cx="418" cy="94" r="58" fill="#FFFFFF" opacity="0.08"/>
-  <circle cx="91" cy="438" r="94" fill="#59C3FF" opacity="0.08"/>
+  <circle cx="420" cy="92" r="58" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="88" cy="438" r="94" fill="#59C3FF" opacity="0.08"/>
 
-  <!-- Stylized label/tag. -->
+  <!-- Cabinet door/part silhouette with a printed identification label. -->
   <g filter="url(#shadow)">
-    <path d="M104 128c0-18 14-32 32-32h158l114 114v174c0 18-14 32-32 32H136c-18 0-32-14-32-32V128Z" fill="url(#label)"/>
-    <path d="m294 96 114 114H326c-18 0-32-14-32-32V96Z" fill="#B9D6F7"/>
-    <circle cx="157" cy="161" r="16" fill="#5B2C83"/>
-    <path d="M157 151v20M147 161h20" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <rect x="86" y="82" width="340" height="300" rx="22" fill="url(#cabinet)"/>
+    <rect x="108" y="104" width="296" height="256" rx="12" fill="none" stroke="#8AAED2" stroke-width="8"/>
+    <rect x="328" y="208" width="28" height="50" rx="14" fill="#5B2C83"/>
+    <rect x="120" y="278" width="272" height="58" rx="10" fill="url(#label)" stroke="#36A9E1" stroke-width="6"/>
+    <circle cx="144" cy="307" r="11" fill="#5B2C83"/>
+    <path d="M140 307h8M144 303v8" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M169 296h92M169 312h64" stroke="#173B72" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
   </g>
 
-  <!-- PDCV wordmark, designed to remain readable as a small icon. -->
-  <text x="256" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="2" fill="#173B72">PDCV</text>
-  <rect x="157" y="324" width="198" height="10" rx="5" fill="#36A9E1"/>
-  <rect x="191" y="351" width="130" height="8" rx="4" fill="#5B2C83" opacity="0.75"/>
+  <!-- Short product name that stays readable as a desktop/taskbar icon. -->
+  <text x="256" y="218" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="900" letter-spacing="-3" fill="#173B72">PD</text>
+  <text x="256" y="253" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" letter-spacing="5" fill="#5B2C83">LABELS</text>
+
+  <rect x="154" y="408" width="204" height="10" rx="5" fill="#36A9E1" opacity="0.95"/>
+  <rect x="198" y="433" width="116" height="8" rx="4" fill="#FFFFFF" opacity="0.55"/>
 </svg>
